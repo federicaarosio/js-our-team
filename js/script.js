@@ -20,9 +20,9 @@ for (let i = 0; i < teamMembers.length; i++) {
     teamCardEl.classList.add("card");
     teamCardEl.innerHTML = 
     `
-    <div class="name">${teamMember.name}</div>
-    <div class="role">${teamMember.role}</div>
     <img src="./img/${teamMember.photo}" alt="team member photo">
+    <h2 class="name">${teamMember.name}</h2>
+    <p class="role">${teamMember.role}</p>
     `
     containerEl.appendChild(teamCardEl);
 }

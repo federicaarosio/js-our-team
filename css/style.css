@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+main h1 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+section.team-members-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+article.card {
+    text-align: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding-bottom: 1rem;
+}
+
+article.card p {
+    font-style: italic;
+}
