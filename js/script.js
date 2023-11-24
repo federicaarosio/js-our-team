@@ -10,3 +10,18 @@ const teamMembers = [
 
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 console.log(teamMembers);
+
+// Stampare le stesse informazioni su DOM sottoforma di stringhe
+for (let i = 0; i < teamMembers.length; i++) {
+    const teamMember = teamMembers[i];
+        
+    const containerEl = document.querySelector("section.team-members-wrapper");
+    const teamCardEl = document.createElement("article");
+    teamCardEl.innerHTML = 
+    `
+    <div class="name">${teamMember.name}</div>
+    <div class="role">${teamMember.role}</div>
+    <div class="photo">${teamMember.photo}</div>
+    `
+    containerEl.appendChild(teamCardEl);
+}
